@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Currency Prices</title>
+  <link id="stylesheet" rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1 id="title">Crypto Currency Prices</h1> 
+
+    <h2 id="entry_fields"> 
+        <p>Top Ranked Crypto Prices Powered by <a href="https://coincap.io">CoinCap</a></p>
+        <div id="Terms" style="display:block">
+            <p id="TOC">Terms and Conditions: This is not financial advice, user accepts all risk and responsibility while using this webpage</p>
+            <button onclick="accept_Terms()">Accept Terms</button>
+        </div>
+
+        <div id="accept_Terms" style="display:none">
+            <label>Search by Name: </label>
+            <input type="string" id="cryptoName"> <br> <br>
+            <button onclick="show_chart()">Search Request</button>
+            <button onclick="get_Top()">Top Ranked Crypto</button>
+            <p id="outputStatus"></p>
+        </div>
+    </h2>
+
+    <div id="chart" style="display:none;">
+        <p id="chartStatus"></p>
+        <canvas id="myChart" style="width:100%; max-width:700px;"></canvas>
+        <button onclick="show_chart('d1')">Year</button>
+        <button onclick="show_chart('h1')">Month</button>
+        <button onclick="show_chart('m1')">Day</button>
+    </div>
+
+    <strong><p id="outputData"></p></strong>
+    <p id="Copyright">© Copyright Alexander Medeiros 2024</p>
+</body>
+</html>

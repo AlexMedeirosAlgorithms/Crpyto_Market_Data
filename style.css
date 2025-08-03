@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(170, 175, 171);
+    font-family: Arial, sans-serif;
+  }
+  
+  #title {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    color: white; 
+    padding: 40px;
+    background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHM0d2JxNmgzeDJmZWM1MTEyYmZuNjE4andrbDJ2NmcwcTR1dXFkNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WoD6JZnwap6s8/giphy.webp');
+    background-position: center;
+    display: inline-block; 
+    width: 100%; 
+  }
+  
+  #entry_fields {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
+  
+  #chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  #myChart {
+    width: 100%;
+    height: 400px;
+    display: block;
+  }
+  
+  #Copyright {
+    text-align: center;
+  }
+  
+  #chartStatus {
+    text-align: center;
+  }
+
+  #outputData{
+    text-align: center;
+  }
+  
